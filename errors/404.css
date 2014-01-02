@@ -1,0 +1,19 @@
+#errorMsg{
+    text-align:center;
+}
+#errorMsg.pos_fixed
+{
+    top:50px;
+}
+
+h1 {
+color:red;
+text-align:center;
+font-size:100px;
+}
+
+h2 {
+color:red;
+text-align:center;
+font-size:50px;
+}
