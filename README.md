@@ -1,6 +1,12 @@
 Http-Server
 ===========
 C implementation of http Server that can host any http websites.
+Server can be run in following ways,
+
+1. Serially         : Single thread of execution will handle every request one after another.
+2. Using processes  : For new request new process is created.
+3. Using Threads    : For new request new thread is created.
+4. Using ThreadPool : Limited number of threads handles the job one after another(most efficient). 
 
 ##Running
 Compile using MakeFile and run with the options available.
