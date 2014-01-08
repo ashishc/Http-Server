@@ -8,6 +8,28 @@ Server can be run in following ways,
 3. Using Threads    : For new request new thread is created.
 4. Using ThreadPool : Limited number of threads handles the job one after another(most efficient). 
 
+Files:
+
+bounded_buffer.c/h:
+Implementation of circular queue.
+
+csuc_http:
+Implementation of head file that has structures of http header packages.
+
+log.c/h:
+Functions that manages logs.
+
+Server.c:
+Main implementation of server code.
+
+Stimer.c/Stimer.h:
+All required functions to manage time.
+
+supporting_functions.c:
+Small functions those are used in server.c
+
+
+
 ##Running
 Compile using MakeFile and run with the options available.
 
