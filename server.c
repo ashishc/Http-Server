@@ -540,6 +540,7 @@ int main(int argc,char *argv[])
 	int sfd;
 	server_operation = (strategy_t)configure_server(argc,argv);		
 	sfd              = initialize_server();
+	printf("Running server with pid %d\n", getpid());
 	server_operation(sfd);  				//start server
 	if(close(sfd)==-1)					//close server
 		print_log(WARNING,"\nError while closing");
