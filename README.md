@@ -30,30 +30,30 @@ Small functions those are used in server.c
 
 
 
-##Running
+## Running
 Compile using MakeFile and run with the options available.
 
 ```
 make
 http_server -d sample_site
 ```
-##Options
+## Options
 
-###-d : 
+### -d : 
 Set directory location of website to be hosted.
 
 ```
 http_serve -d sample_site
 ```
 
-###-p : 
+### -p : 
 Set port number of server.
 
 ```
 http_serve -d sample_site -p 9000
 ```
 
-###-f : 
+### -f : 
 Run server using multiple processes.
 For every new request process will get created.
 
@@ -61,7 +61,7 @@ For every new request process will get created.
 http_serve -f -d sample_site -p 9000
 ```
 
-###-t : 
+### -t : 
 Run server using threads.
 For every new request thread will get created.
 
@@ -69,26 +69,26 @@ For every new request thread will get created.
 http_serve -t -d sample_site -p 9000
 ```
 
-###-w :
+### -w :
 Run server with limited numbers of worked threads.
 ```
 http_serve -w 10 -d sample_site -p 9000
 ```
 
-###-q :
+### -q :
 Limit the queue size for thread pool strategy.
 Only use this option with -w.
 ```
 http_serve -w 10 -q 10 -d sample_site -p 9000
 ```
 
-###Serial Operation :
+### Serial Operation :
 If no f,t,w options are provided, server will run in serial mode.
 ```
 http_serve -w 10 -d sample_site -p 9000
 ```
 
-###-v:
+### -v:
 Set log level to ERROR,WARNING,INFO or DEBUG.
 ```
 http_serve -w 10 -d sample_site -p 9000 -v ERROR
@@ -97,7 +97,7 @@ http_serve -w 10 -d sample_site -p 9000 -v INFO
 http_serve -w 10 -d sample_site -p 9000 -v DEBUG
 ```
 
-##Signals Handled:
+## ignals Handled:
 
 ### SIGINT|SIGTERM : 
     Use ctrl + c to shutdown server or use kill.
@@ -132,7 +132,7 @@ Avg time spent serving requests  : 0.08511513788 seconds
 ---------------------------------------------------------------------
 ```
 
-###About Me :
+### About Me :
 
 I love coding and If you guys need any help, reach me on linkedin:
 http://www.linkedin.com/pub/ashish-chaudhari/85/529/52
